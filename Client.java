@@ -26,7 +26,7 @@ public class Client {
                     case "circle" -> {
                         System.out.print("Введите радиус круга: ");
                         double radius = scanner.nextDouble();
-                        scanner.nextLine(); // Очистка буфера
+                        scanner.nextLine(); 
                         outputStream.writeObject(new Circle(radius));
                     }
                     case "rectangle" -> {
@@ -34,7 +34,7 @@ public class Client {
                         double width = scanner.nextDouble();
                         System.out.print("Введите высоту прямоугольника: ");
                         double height = scanner.nextDouble();
-                        scanner.nextLine(); // Очистка буфера
+                        scanner.nextLine();
                         outputStream.writeObject(new Rectangle(width, height));
                     }
                     default -> {
